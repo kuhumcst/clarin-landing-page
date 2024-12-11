@@ -1,6 +1,9 @@
 :root {
-    font-family: Georgia, serif;
+    /* Neo-Grotesque from https://modernfontstacks.com */
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    font-weight: 300;
 
+  /* Flexoki colour scheme https://stephango.com/flexoki */
   --flexoki-black:       #100F0F;
   --flexoki-paper:       #FFFCF0;
 
@@ -56,26 +59,41 @@ a.card {
 }
 
 figure {
-    border-radius: 2px;
     border: 1px solid var(--flexoki-black);
+    border-left: 48px solid var(--flexoki-black);
+    background: var(--flexoki-paper);
+    box-shadow: inset 12px 0px 24px 0px rgba(0,0,0,0.1);
+    max-width: 480px;
+    margin: 0;
+}
+
+a:not(:first-child) figure {
+    margin-top: 24px;
 }
 
 figure img {
     padding: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 0;
 }
 
 figcaption {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     letter-spacing: 12%;
     word-spacing: 100%;
-    padding: 16px;
-    background: var(--flexoki-black);
-    color: var(--flexoki-paper);
+    padding: 8px;
+    margin: 8px;
+    color: var(--flexoki-black);
 }
 
-a.card.green figure { border: 1px solid var(--flexoki-green-400); }
-a.card.green figcaption {
-    background: var(--flexoki-green-400);
+a.card.green figure { border-color: var(--flexoki-green-400); }
+a.card.red figure { border-color: var(--flexoki-red-400); }
+
+a.card figure {
+    transition: outline-color 0.2s;
+    outline: 4px solid transparent;
+}
+
+a.card:hover figure {
+    outline-color: var(--flexoki-black);
 }
