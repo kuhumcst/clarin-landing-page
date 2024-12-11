@@ -1,0 +1,25 @@
+* {
+    font-family: Georgia, serif;
+}
+
+a.card {
+    /* resets */
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+figure {
+    padding: 16px;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    padding: 24px;
+}
+
+figcaption {
+    line-height: 1.6;
+    letter-spacing: 12%;
+    word-spacing: 40%;
+    margin-top: 8px;
+    color: #333;
+}
