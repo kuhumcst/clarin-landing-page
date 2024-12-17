@@ -140,15 +140,15 @@ nav ul li + li {
 
 footer {
     margin: 0 auto;
-    margin-top: 64px;
+    margin-top: 48px;
 
     display: flex;
     align-items: center;
 
     font-size: 14px;
 
-        border-top: 4px solid #FFFFFFCC;
-        padding-top: 16px;
+    border-top: 4px solid #FFFFFFCC;
+    padding-top: 16px;
 }
 
 footer address {
