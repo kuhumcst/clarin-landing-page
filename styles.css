@@ -146,6 +146,9 @@ footer {
     align-items: center;
 
     font-size: 14px;
+
+        border-top: 4px solid #FFFFFFCC;
+        padding-top: 16px;
 }
 
 footer address {
@@ -239,7 +242,7 @@ section.cards {
 }
 
 .icon {
-    max-height: 64px;
+    height: 52px;
 }
 
 @media (width <= 1000px) {
@@ -271,13 +274,24 @@ section.cards {
         border-bottom: 4px solid #FFFFFFCC;
         padding-bottom: 16px;
     }
+    header nav { text-align: center; width: 100%; }
     nav ul li {
         display: inline;
     }
     nav ul li + li {
         margin-left: 8px;
     }
-    nav ul li + li:before { content: "| "; margin-right: 8px}
+    nav ul li + li:before { content: "| "; margin-right: 8px }
+    footer {
+        flex-direction: column;
+    }
+    footer address {
+        margin-left: 0;
+        text-align: center;
+    }
+    footer > * + * {
+        margin-top:16px;
+    }
 }
 
 @media (width <= 600px) {
