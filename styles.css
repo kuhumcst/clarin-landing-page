@@ -86,7 +86,7 @@ header h1 {
     color: white;
     font-weight: normal;
     font-size: 72px;
-    letter-spacing: 8px;
+    letter-spacing: 0.2ch;
 
     padding-left: 84px;
     background-image: url("img/clarin-graphic-white.png");
@@ -111,8 +111,8 @@ footer,
 nav {
     color: #FFFFFFCC;
     font-size: 16px;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    letter-spacing: 0.2ch;
+    word-spacing: 0.2ch;
     line-height: 1.8;
 }
 
@@ -215,8 +215,8 @@ a.card:hover figure {
 figcaption {
     font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 15%;
-    word-spacing: 120%;
+    letter-spacing: 0.2ch;
+    word-spacing: 0.6ch;
     padding: 24px;
     padding-top: 16px;
     background: var(--flexoki-black);
