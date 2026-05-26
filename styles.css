@@ -247,6 +247,7 @@ section.cards {
 
 .icon {
     height: 52px;
+    vertical-align: top;
 }
 
 @media (width <= 1000px) {
